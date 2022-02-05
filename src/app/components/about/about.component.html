@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-navbar></app-navbar>
+  </div>
+</div>
+<div class="row txt-center" style="margin-top: 70px">
+  <div class="col-sm-offset-2 col-sm-8">
+    <div class="row txt-header txt-center">OUR STORY</div>
+    <hr class="hrCl" />
+    <div class="col-sm-12 txt-bg">
+      <div style="padding: 2px 1px 20px 1px">
+        Austria, officially the Republic of Austria, is a landlocked country in
+        the southern part of Central Europe, located on the Eastern Alps. The
+        country is composed of nine federated states, one of which is Vienna,
+        Austria's capital and largest city. Austria, officially the Republic of
+        Austria, is a landlocked country in the southern part of Central Europe,
+        located on the Eastern Alps. The country is composed of nine federated
+        states, one of which is Vienna, Austria's capital and largest city
+      </div>
+    </div>
+    <div class="row txt-header txt-center">WHO WE ARE</div>
+    <hr class="hrCl" />
+    <div class="col-sm-12 txt-center">
+      <div class="col-sm-4" *ngFor="let data of arrImg">
+        <!-- <div class="frameImg"> -->
+        <img
+          src="{{ data.Url }}"
+          class="imgCl frameImg slide"
+          alt=""
+          height="150"
+          width="230"
+        />
+        <!-- </div> -->
+        <p class="txt-md">{{ data.Txt }}</p>
+      </div>
+      <!-- <table width="100%">
+        <tr>
+          <td >
+            
+          </td>
+        </tr>
+      </table> -->
+    </div>
+  </div>
+</div>

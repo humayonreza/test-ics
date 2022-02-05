@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-navbar></app-navbar>
+  </div>
+</div>
+<ngx-slick-carousel
+  #slickModal="slick-carousel"
+  [config]="helperService.slideConfigBanner"
+>
+  <div ngxSlickItem *ngFor="let data of arrSlider">
+    <img
+      src="{{ data.ImgUrl }}"
+      width="100%"
+      height="auto"
+      style="border: thin solid #fff"
+    />
+    <!-- <p class="header txt-center" style="margin-top: -100px; color: #fff">
+      {{ data.Txt }}
+    </p> -->
+  </div>
+</ngx-slick-carousel>

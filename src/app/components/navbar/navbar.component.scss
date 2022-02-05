@@ -1,0 +1,38 @@
+.navbar {
+  top: 0;
+  position: fixed;
+  margin-bottom: 0;
+  z-index: 9999;
+  border-bottom: thin solid #fff;
+  background-color: rgb(167, 84, 84);
+  border-radius: 0;
+  box-shadow: 5px 10px 25px #aaaaaa;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  transition: 0.5s;
+  font-size: 18px;
+  color: rgb(216, 236, 197);
+}
+.navbar li a {
+  color: rgb(216, 236, 197);
+  transition: 0.5s;
+  font-size: 16px;
+}
+.navbar-nav li a:hover {
+  color: rgb(9, 245, 245);
+  transition: 0.5s;
+}
+
+.nav .activeLink {
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.nav .notActiveLink {
+  font-weight: normal;
+  transition: 0.5s;
+}
